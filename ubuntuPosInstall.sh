@@ -67,6 +67,5 @@ sudo apt autoremove -y
 
 
 # Setting environment variables #
-
-sudo echo -e '\nJAVA_HOME="/usr/lib/jvm/default-java"' > /etc/environment
-source /etc/environment
+BASHELL=$( cat $HOME/.bashrc )
+echo -e "$BASHELL\nexport JAVA_HOME=/usr/lib/jvm/default-java\nexport PATH=$JAVA_HOME/bin:$PATH" > $HOME/.bashrc
