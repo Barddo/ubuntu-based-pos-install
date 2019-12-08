@@ -68,5 +68,5 @@ sudo apt autoremove -y
 
 # Setting environment variables #
 
-sudo echo -e '\nJAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/"' > /etc/environment
+sudo echo -e '\nJAVA_HOME="/usr/lib/jvm/default-java"' > /etc/environment
 source /etc/environment
